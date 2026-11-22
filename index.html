@@ -159,6 +159,12 @@
     }
     .choice:active { transform: scale(0.98); }
 
+    .click-hint {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+    }
     .choice-label {
       font-size: 0.95rem;
       color: var(--ink-soft);
@@ -193,6 +199,7 @@
     .choice.aurelya {
       font-family: 'Indie Flower', cursive;
     }
+    .choice.aurelya .click-hint,
     .choice.aurelya .choice-label,
     .choice.aurelya .choice-quote,
     .choice.aurelya .chapters-hint {
@@ -259,6 +266,7 @@
 
     <div class="choices">
       <a href="karly.html" class="choice karly">
+        <div class="click-hint">Cliquer ici pour</div>
         <div class="choice-label">Écouter la version de</div>
         <div class="choice-name">Karly</div>
         <div class="choice-quote">« Au milieu des décombres et des vestiges du vieux monde, nos jours d’amour et de résilience. »</div>
@@ -266,6 +274,7 @@
       </a>
 
       <a href="aurelya.html" class="choice aurelya">
+        <div class="click-hint">Cliquer ici pour</div>
         <div class="choice-label">Écouter la version de</div>
         <div class="choice-name">Aurélya</div>
         <div class="choice-quote">« Dans les ruines du monde ancien, une histoire de survie… et d’amour. »</div>
